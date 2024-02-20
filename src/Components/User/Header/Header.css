@@ -1,0 +1,20 @@
+.Header{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(180, 236, 236);
+   
+}
+.head{
+    text-align: center;
+    font-size:250%;
+}
+.iconbar{
+    padding-left: 20px;
+    
+}
+.navbar{
+    background-color:rgb(249, 255, 255) ;
+}
+.nav-item{
+    padding-left: 22px;
+   
+}
