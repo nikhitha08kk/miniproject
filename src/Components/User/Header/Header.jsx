@@ -10,10 +10,10 @@ function Header() {
 
   return (
     <div className="Header">
-      <div className="container">
-        <div className='row'>
+      <div className="container top">
+        <div className='row '>
           <div className="col-9 head">Euphoria</div>
-          <div className="col-3">
+          <div className="col-3 icons">
             <span className='iconbar'><FaSearch size={iconSize} /></span>
             <span className='iconbar'><FaUser size={iconSize} /></span>
             <span className='iconbar'><IoHeartOutline size={iconSize} /></span>
@@ -22,7 +22,7 @@ function Header() {
         </div>
       </div>
       <div className='container navbar'>
-          <div className='row'>
+          <div className='row nav'>
             <div className='col'>
               <div className='nav-item'>NEW ARRIVALS</div>
             </div>
