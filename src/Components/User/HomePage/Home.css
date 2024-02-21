@@ -1,12 +1,15 @@
 .bot{
-width: 1280px;
-height:610px;
+
 padding-left: 12px;
+margin-top: 100px;
+margin-left:271px;
+width: 50%;
+height: auto;
+box-sizing: border-box;
+border-radius: 17%;
  
 }
-.home{
-    background-color: rgb(244, 179, 255);
-}
+
 .icons{
     padding-top: 12px;
 }
