@@ -2,14 +2,78 @@
 
 padding-left: 12px;
 margin-top: 100px;
-margin-left:271px;
+margin-left:295px;
 width: 50%;
 height: auto;
 box-sizing: border-box;
 border-radius: 17%;
+border: 1PX  solid rgb(169, 187, 187);
+box-shadow: 5px 5px 5px 5px rgb(195, 186, 186);
  
 }
 
 .icons{
     padding-top: 12px;
+}
+.wel{
+    text-align: center;
+    font-family:fangsong;
+    margin-top: 45PX;
+    font-size:  xx-large;
+}
+.we{
+    font-style:fangsong;
+    text-align:justify;
+    margin-top: 12px;
+    font-size: large;
+    margin-left: 270px;
+    margin-bottom: 35PX;
+  
+}
+.sec{
+    padding-top: 72px;
+    background-color: rgb(71, 65, 239);
+}
+.new{
+    margin-left: 110px;
+    max-width: 400px;
+    height: 375px;
+    border: 2PX  solid rgb(0, 0, 0); 
+}
+.best{
+    margin-left: 110px;
+    max-width: 400px;
+    height: 375px;
+    border: 2PX  solid rgb(0, 0, 0); 
+}
+.img-title1{
+font-size:x-large;
+text-align: center;
+color: white;
+}
+.img-title2{
+    font-size:x-large;
+    text-align: center;
+    color: white;
+}
+.black-scent{
+    max-width: 250px;
+}
+.men{
+    max-width: 250px;
+}
+.violet-scent{
+    max-width: 250px;
+    background-color: blue;
+}
+.women{
+    max-width: 250px;
+    background-color: blue;
+}
+.first-men{
+  padding-left: 150px;
+  
+}
+.sec-women{
+  padding-left: 150px; 
 }
