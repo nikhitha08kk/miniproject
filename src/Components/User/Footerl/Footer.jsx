@@ -3,29 +3,18 @@ import './Footer.css'
 function Footer() {
   return (
     <div className='footer'>
-     <div className='container'>
+     <div className='container '>
         <div className='row'>
-          <div className='col-3'>
-            <img alt='footerimg'className='foot' src='data:image/png;base64,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'></img>
-          </div>  
-          <div className='col-3'>
-          Contact Us
- Rehman Market, Pan Mandi,
-Sadar Bazar, Delhi, 110006 India
- fragranceheaven2705@gmail.com
- +91 7838191410
+         
+          <div className='col-4'>
+         <p className='con'> Contact Us</p>
+
           </div>
-          <div className='col-3'>
-          Help Center
-Contact Us
-Privacy Policy
-Terms and Conditions
-Refund policy
-Shipping and Returns
-Terms of Service
+          <div className='col-4'>
+ <p className='con'>www.euphoria@.com</p>
           </div>
-          <div className='col-3'>
-          Follow Us
+          <div className='col-4'>
+          <p className='con'>Follow Us</p>
           </div>
         </div>
      </div>   
