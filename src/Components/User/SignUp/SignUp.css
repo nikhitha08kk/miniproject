@@ -1,0 +1,48 @@
+.formS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    min-height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+.for{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cbdbd8;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: transform 0.2s;
+    width: 530px;
+    
+}
+.create{
+    text-align: center;
+    color: rgb(42, 166, 238);
+    font-size:xx-large;
+    padding-bottom: 20px;
+}
+.acc{
+background-color:rgb(42, 166, 238);
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+border-radius: 8px;
+}
+.conf{
+    padding-right:59px ;
+    padding-top: 12px;
+padding-bottom: 12px;
+}
+
+.pass{
+    padding-top: 12px;
+
+}

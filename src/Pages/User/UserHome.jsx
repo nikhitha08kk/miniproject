@@ -3,6 +3,7 @@ import React from 'react'
  import Home from '../../Components/User/HomePage/Home'
 import Footer from '../../Components/User/Footerl/Footer'
 
+
 function UserHome() {
   return (
     <div><Header/> <Home/><Footer/></div>
