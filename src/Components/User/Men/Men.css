@@ -1,31 +1,8 @@
 .new-title{
     background-color: #000000;
     color: white;
-}
-.arrival{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding-top: 30px;
-}
-.arrival2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-}
-.arrival3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-}
-.arrival4{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-size:xx-large;
+    font-weight:bold;
 }
 .product-card{
     background-color: #ffdcdc;
@@ -68,4 +45,28 @@
 }
 .product-price{
     font-weight: bold;
+}
+.for-men1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.for-men2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}.for-men3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.for-men4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

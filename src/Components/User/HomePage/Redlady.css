@@ -1,0 +1,33 @@
+ 
+  .red-lady{
+    padding-left: 0px;
+    padding-right: 0px;
+
+  }
+  .right{
+    position: absolute;
+    bottom:281px;
+    left: 60px;
+    font-size: x-large;
+    color: white;
+    font-family: cursive;
+ }
+ .be{
+    position: absolute;
+    bottom:81px;
+    left: 80px;
+    font-size:300%;
+    color: white;
+    font-family: cursive;
+ }
+ .fid{
+    position: absolute;
+    bottom:10px;
+    left: 80px;
+    font-size:300%;
+    color: white;
+    font-family: cursive; 
+ }
+ .red-bot{
+   width: 100%;
+ }

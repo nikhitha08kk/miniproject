@@ -24,31 +24,7 @@ function Header() {
                <div><FaCartPlus size={iconSize} /></div>
       </div>
     
-      <div className='container navbar'>
-          <div className='row nav'>
-            <div className='col'>
-              <div className='nav-item'><a href='/Newarrival'>NEW ARRIVALS</a></div>
-            </div>
-            <div className='col'>
-              <div className='nav-item'>BEST SELLER</div>
-            </div>
-            <div className='col'>
-              <div className='nav-item'>MEN</div>
-            </div>
-            <div className='col'>
-              <div className='nav-item'>WOMEN</div>
-            </div>
-            <div className='col'>
-              <div className='nav-item'>BODY & BATH</div>
-            </div>
-            <div className='col'>
-              <div className='nav-item'>MINIATURES</div>
-            </div>
-            <div className='col'>
-              <div className='nav-item'>SHOP BY BRANDS</div>
-            </div>
-          </div>
-      </div>
+      
     </div>
   );
 }

@@ -1,33 +1,29 @@
-.new-title{
-    background-color: #000000;
-    color: white;
-}
-.arrival{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding-top: 30px;
-}
-.arrival2{
+.seller1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 30px;
 }
-.arrival3{
+.seller2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 30px;
 }
-.arrival4{
+.seller3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+
+}
+.seller4{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-.product-card{
+}.product-card{
     background-color: #ffdcdc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0);

@@ -2,28 +2,28 @@
     background-color: #000000;
     color: white;
 }
-.arrival{
+.for-women1{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     padding-top: 30px;
 }
-.arrival2{
+.for-women2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     padding-top: 30px;
 }
-.arrival3{
+.for-women3{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     padding-top: 30px;
 }
-.arrival4{
+.for-women4{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
     padding-top: 30px;
     padding-bottom: 30px;
 }
