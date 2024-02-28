@@ -13,7 +13,7 @@
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    background-color: #ffdcdc;
+    background-color: #643c75;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     padding: 20px;
@@ -23,26 +23,40 @@
 }
 .create{
     text-align: center;
-    color: rgb(42, 166, 238);
+    color:goldenrod;
     font-size:xx-large;
     padding-bottom: 20px;
 }
 .acc{
-background-color:rgb(42, 166, 238);
+background-color:#1a73e8;
 border: none;
 padding: 10px 20px;
 text-align: center;
 text-decoration: none;
 cursor: pointer;
 border-radius: 8px;
+color: white;
 }
 .conf{
     padding-right:59px ;
     padding-top: 12px;
 padding-bottom: 12px;
+color: white;
 }
 
 .pass{
     padding-top: 12px;
+    color: white;
 
+}
+.email{
+    padding-left: 33px;
+    color: white;
+    padding-bottom: 12px;
+}
+.use{
+    color: white;
+}
+.do{
+    color: rgb(0, 0, 0);
 }

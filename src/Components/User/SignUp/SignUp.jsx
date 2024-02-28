@@ -7,6 +7,11 @@ function SignUp() {
       <form className='for'>
          <h1 className='create'>CREATE AN ACCOUNT</h1>
          <p>
+          <label className='email'>Email:
+            <input type='email'></input>
+          </label>
+         </p>
+         <p>
           <label className='use'>Username:
             <input type='"text'></input>
           </label>
@@ -25,6 +30,7 @@ function SignUp() {
          <p>
           <button className='acc' type='submit'>SIGNUP</button>
          </p>
+         <p className='do'>Do you have an account?<a href='/Login'> Login</a></p>
       
 
          

@@ -78,12 +78,18 @@ text-align: center;
   
   .marquee-container {
     overflow: hidden;
+    width: 100%;
   }
   
   .marquee-content {
+    width: 100%;
     display: inline-block;
-    animation: marquee 8s linear infinite;
+    animation: marquee 10s linear infinite;
   }
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
   .home-img{
     background-color: rgb(0, 0, 0);
   }

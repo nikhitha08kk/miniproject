@@ -13,7 +13,7 @@
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    background-color:  #ffdcdc;
+    background-color:  #643c75;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     padding: 20px;
@@ -21,17 +21,21 @@
     width: 530px;
 }
 .but-l{
-    background-color:rgb(42, 166, 238);
+    background-color:#1a73e8;
 border: none;
 padding: 10px 20px;
 text-align: center;
 text-decoration: none;
 cursor: pointer;
 border-radius: 8px;
+color: white;
 }
 .logi{
     text-align: center;
-    color: rgb(42, 166, 238);
+    color:goldenrod;
     font-size:xx-large;
     padding-bottom: 20px;
+}
+.dont{
+    color: black;
 }

@@ -10,6 +10,7 @@ import UserBodywash from '../Pages/User/UserBodywash'
 import UserMen from '../Pages/User/UserMen'
 import UserWomen from '../Pages/User/UserWomen'
 
+
 function Userrouter() {
   return (
     <div>
@@ -23,6 +24,7 @@ function Userrouter() {
         <Route path='/Bodywash' element={<UserBodywash/>}/>
         <Route path='/Men' element={<UserMen/>}/>
         <Route path='/Women'element={<UserWomen/>}/>
+      
          
         </Routes>
     </div>

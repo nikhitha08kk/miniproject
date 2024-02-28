@@ -4,6 +4,9 @@ function Navbar() {
   return (
     <div className='container navbar'>
     <div className='row nav'>
+    <div className='col'>
+        <div className='nav-item'><a href='/'>HOME</a></div>
+      </div>
       <div className='col'>
         <div className='nav-item'><a href='/Newarrival'>NEW ARRIVALS</a></div>
       </div>

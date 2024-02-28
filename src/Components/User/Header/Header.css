@@ -1,6 +1,7 @@
 .top{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(255, 255, 255);
+    margin-top: 12px;
    
 }
 .Header{
@@ -26,7 +27,7 @@ max-width: 130px;
 
 
 .nav-item{
-    padding-left: 35px;
+    padding-left: 5px;
     margin-left: 100px;
     font-weight:bold ;
    

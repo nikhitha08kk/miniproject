@@ -18,7 +18,7 @@ function Login() {
          <p>
          <button className='but-l'>LOGIN</button>
          </p>
-
+        <p className='dont'>Don't have an account?<a href='/SignUp'>Signup</a></p>
         </form>
     </div>
   )
