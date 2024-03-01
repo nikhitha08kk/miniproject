@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 function Navbar() {
   return (
-    <div className='container navbar'>
+    <div className=' navbar'>
     <div className='row nav'>
     <div className='col'>
         <div className='nav-item'><a href='/'>HOME</a></div>

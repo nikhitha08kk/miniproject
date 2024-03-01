@@ -7,7 +7,7 @@ function Bodywash() {
   return (
     <div>
       <Header/><Navbar/>
-      <div className='container new-title'><h1>BODY & BATH</h1></div>
+      <div className=' new-title'><h1>BODY & BATH</h1></div>
       <div className='container bodywash1'>
       <div  className='product-card'>
            <div className='product-image'> <img className="pro-img " alt='pro'src='https://fragranceheaven.in/cdn/shop/files/4_6adf6c83-7aa4-4a05-b269-0d2048c8e5b2_360x.png?v=1688386655'></img></div> 

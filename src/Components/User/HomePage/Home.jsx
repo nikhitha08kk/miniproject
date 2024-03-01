@@ -5,7 +5,7 @@ function Home() {
   return (
 <div className='home'>
      <div className='sec'>
-      <div className='container'>
+     
         <div className='row'>
           <div className='col-6'>
           <img alt='sent1' className='black-scent' src='https://www.perfume24x7.com/cdn/shop/products/Bvlgari_Man_in_Black_EDP_A_1800x1800_3b9dbe43-461e-4c56-8993-40f72ff1d75e.jpg?v=1636444914&width=900'></img>
@@ -17,8 +17,9 @@ function Home() {
           </div>
         </div>
       </div>
-      </div>
-      <div className='container brand'><h1>TOP BRANDS</h1></div>
+      <div className='note-title'>SHOP BY NOTES</div>
+     
+     
 </div>
     
   )

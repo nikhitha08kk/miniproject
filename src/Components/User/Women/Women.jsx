@@ -2,11 +2,12 @@ import React from 'react'
 import './Women.css'
 import Header from '../Header/Header'
 import Navbar from '../Header/Navbar'
+import Footer from '../Footerl/Footer'
 function Women() {
   return (
     <div>
         <Header/><Navbar/>
-        <div className='container new-title'><h1>FOR WOMEN</h1></div>
+        <div className=' new-title'><h1>FOR WOMEN</h1></div>
         <div className='container for-women1'>
         <div  className='product-card'>
            <div className='product-image'> <img className="pro-img " alt='pro'src='https://fragranceheaven.in/cdn/shop/files/210_360x.png?v=1686867325'></img></div> 
@@ -159,6 +160,7 @@ function Women() {
            </div>
         </div>
         </div>
+        <Footer/>
     </div>
   )
 }

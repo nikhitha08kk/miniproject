@@ -7,7 +7,7 @@ import Footer from '../Footerl/Footer';
 function Bestseller() {
   return (
 <div><Header/><Navbar/>
-<  div className='container new-title'><h1>BEST SELLER</h1></div>
+<  div className='new-title'><h1>BEST SELLER</h1></div>
      <div className='container seller1'>
      <div  className='product-card'>
            <div className='product-image'> <img className="pro-img " alt='pro'src='https://fragranceheaven.in/cdn/shop/files/171_360x.png?v=1686859417'></img></div> 

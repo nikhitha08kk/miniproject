@@ -18,9 +18,11 @@ box-shadow: 5px 5px 5px 5px rgb(195, 186, 186);
 .wel{
     text-align: center;
     font-family:fangsong;
-    margin-top: 45PX;
+    margin-top: 0PX;
     font-size:  xx-large;
     color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .sec{
@@ -91,7 +93,7 @@ text-align: center;
     100% { transform: translateX(-100%); }
 }
   .home-img{
-    background-color: rgb(0, 0, 0);
+    background-color: #47274c;
   }
  
  
@@ -108,10 +110,52 @@ text-align: center;
   justify-content: space-between;
  }
  .brand{
-  background-color: black;
+  background-color:#47274c;
   color: white;
  }
  .home{
   width: 100%;
  }
-
+.bul{
+width: 180px;
+height: 180px;
+}
+.eli{
+  width: 180px;
+  height: 153px;
+  padding-top: 42px;
+  margin-top: -1px;
+}
+.note-1{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.note-2{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.abt-title{
+  color: #ffffff;
+  background-color: #47274c;
+}
+.abt-para{
+  text-align:center;
+  
+}
+.abt-para1{
+font-size:x-large;
+font-family:cursive ;
+}
+.abt-para2{
+  font-size:x-large;
+  font-family:cursive ;
+}
+.note-title{
+  background-color: #47274c;
+  color: #fff;
+  font-size: xx-large;
+  font-weight:bolder;
+}

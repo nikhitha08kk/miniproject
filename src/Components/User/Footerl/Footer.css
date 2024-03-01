@@ -1,7 +1,14 @@
-.footer{
+.footer-content{
     background-color: black;
-  width: 100%;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+ 
 }
 .con{
     color: white;
+}
+.contactus{
+    color: #fff;
 }

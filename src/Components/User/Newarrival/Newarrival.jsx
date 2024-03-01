@@ -9,7 +9,7 @@ function Newarrival() {
   return (
   <div>
     <Header/><Navbar/>
-    <div className='container new-title'><h1>NEW ARRIVALS</h1></div>
+    <div className=' new-title'><h1>NEW ARRIVALS</h1></div>
     <div className='container arrival'>
         <div  className='product-card'>
            <div className='product-image'> <img className="pro-img " alt='pro'src='https://www.perfume24x7.com/cdn/shop/products/Mont_Blanc_Explorer_A.jpg?v=1622741743&width=540'></img></div> 

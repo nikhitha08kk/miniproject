@@ -7,7 +7,7 @@ function Men() {
   return (
     <div>
       <Header/><Navbar/>
-      <div className='container new-title'>FOR MEN</div>
+      <div className=' new-title'>FOR MEN</div>
       <div className='container for-men1'>
       <div  className='product-card'>
            <div className='product-image'> <img className="pro-img " alt='pro'src='https://fragranceheaven.in/cdn/shop/files/171_360x.png?v=1686859417'></img></div> 
