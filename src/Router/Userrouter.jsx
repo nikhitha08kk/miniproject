@@ -9,7 +9,8 @@ import UserBestseller from '../Pages/User/UserBestseller'
 import UserBodywash from '../Pages/User/UserBodywash'
 import UserMen from '../Pages/User/UserMen'
 import UserWomen from '../Pages/User/UserWomen'
-
+import UserCart from '../Pages/User/UserCart'
+import UserWish from '../Pages/User/UserWish'
 
 function Userrouter() {
   return (
@@ -24,6 +25,8 @@ function Userrouter() {
         <Route path='/Bodywash' element={<UserBodywash/>}/>
         <Route path='/Men' element={<UserMen/>}/>
         <Route path='/Women'element={<UserWomen/>}/>
+        <Route path='/Cart' element={<UserCart/>}/>
+        <Route path='/Wish' element={<UserWish/>}/>
       
          
         </Routes>

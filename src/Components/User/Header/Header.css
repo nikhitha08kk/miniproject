@@ -60,6 +60,9 @@ color: #ffffff;
     border: none;
     cursor: pointer;
 }
+.dropbtn:hover{
+color: rgb(104, 104, 251);
+}
 .dropdown-content{
     display: none;
     position: absolute;
@@ -93,4 +96,21 @@ color: #ffffff;
 }
 .logo{
     margin-left:355px;
+}
+.cart a{
+    text-decoration: none;
+    color:inherit;
+}
+.cart :hover{
+    color: rgb(104, 104, 251); 
+}
+.search:hover{
+    color: rgb(104, 104, 251); 
+}
+.heart:hover{
+    color: rgb(104, 104, 251); 
+}
+.heart a{
+    text-decoration: none;
+    color:inherit; 
 }

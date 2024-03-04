@@ -112,6 +112,7 @@ text-align: center;
  .brand{
   background-color:#47274c;
   color: white;
+  font-family:fangsong;
  }
  .home{
   width: 100%;
@@ -140,6 +141,7 @@ height: 180px;
 .abt-title{
   color: #ffffff;
   background-color: #47274c;
+  font-family:fangsong;
 }
 .abt-para{
   text-align:center;
@@ -158,4 +160,12 @@ font-family:cursive ;
   color: #fff;
   font-size: xx-large;
   font-weight:bolder;
+  font-family:fangsong;
+}
+.black-scent:hover{
+  transform: scale(1.1);
+
+}
+.violet-scent:hover{
+  transform: scale(1.1);
 }
