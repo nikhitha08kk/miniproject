@@ -1,0 +1,19 @@
+.logout{
+    background-color:hsl(282, 32%, 35%) ;
+    color: #ffffff;
+    margin-left:400px;
+    margin-top: 23px;
+}
+.adnavbar{
+    display: flex;
+}
+.list{
+    padding: 12px 229px;
+}
+.logoa{
+    margin-left:685px;
+    width: 10%;
+}
+.adlogo{
+    display: flex;
+}

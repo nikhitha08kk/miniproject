@@ -1,5 +1,18 @@
 import React from 'react'
 import './Login.css'
+
+// const initialValues = {
+//   email: " ",
+//   password : " ",
+// };
+// const validatrForm = (values) =>{
+//   const errors = {};
+
+//   if (!values.email){
+//     errors.email = 'Email is Required';
+//   }else if()
+
+// }
 function Login() {
   return (
     <div className='login'>
