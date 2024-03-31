@@ -159,6 +159,7 @@ function Bestseller() {
               <button className='product-button'>Add Cart</button>
            </div>
         </div>
+      
      </div>
 <Footer/>     
 </div>

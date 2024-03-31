@@ -1,4 +1,4 @@
-.formS{
+.log-admi{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,29 +7,23 @@
     min-height: 100vh;
     background-color: #ffffff;
     flex-direction: column;
+  
 }
-.for{
+.log-adm{
     display: flex;
     align-items:center;
     justify-content: center;
     flex-direction: column;
     background-image: linear-gradient(to right,rgb(169, 163, 163), #7d369b);
+
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     padding: 20px;
     transition: transform 0.2s;
     width: 530px;
-   
-    
 }
-.create{
-    text-align: center;
-    color:rgb(236, 171, 8);
-    font-size:xx-large;
-    padding-bottom: 20px;
-}
-.acc{
-background-color:#1a73e8;
+.but-l-adm{
+    background-color:#1a73e8;
 border: none;
 padding: 10px 20px;
 text-align: center;
@@ -38,28 +32,22 @@ cursor: pointer;
 border-radius: 8px;
 color: white;
 }
-
-.inpu-conf{
+.logi-adm{
+    text-align: center;
+    color:goldenrod;
+    font-size:xx-large;
+    padding-bottom: 20px;
+}
+.dont-adm{
+    color: black;
+}
+.use-adm{
     padding-left: 120px;
     border-radius: 8px;
-    padding-bottom: 8px;
+     padding-bottom: 8px;
 }
-.pass{
-    padding-left: 120px;
-    border-radius: 8px;
-    padding-bottom: 8px;
-
-}
-.email{
+.pass-adm{
     padding-left: 120px;
    border-radius: 8px;
     padding-bottom: 8px;
-}
-.use{
-    padding-left: 120px;
-    border-radius: 8px;
-    padding-bottom: 8px;
-}
-.do{
-    color: rgb(0, 0, 0);
 }

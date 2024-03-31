@@ -8,9 +8,9 @@ function Header() {
        <div><button className='logout'>Logout</button></div> 
         </div>
         <div className='adnavbar'>
-            <div className='list'>< a href='/Admin/user' >UserList</a></div>
-            <div className='list'><a href='/Admin/product'>Product</a></div>
-            <div className='list'>order</div>
+            <div className='list-a'>< a href='/Admin/user' >UserList</a></div>
+            <div className='list-b'><a href='/Admin/product'>Product</a></div>
+            <div className='list-c'>< a href='/Admin/order'>order</a></div>
         </div>
   </div>
   )

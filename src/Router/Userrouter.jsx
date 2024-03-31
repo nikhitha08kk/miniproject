@@ -18,7 +18,7 @@ function Userrouter() {
     <div>
         <Routes>
         <Route path='/' element={<UserHome/>}/>
-         <Route path='/SignUp' element={<UserSignUp/>}/>
+        <Route path='/SignUp' element={<UserSignUp/>}/>
         <Route path='/login' element={<UserLogin/>}/>
         <Route path='/product' element={<UserProduct/>}/>
         <Route path='/Newarrival'element={<UserArrival/>}/>

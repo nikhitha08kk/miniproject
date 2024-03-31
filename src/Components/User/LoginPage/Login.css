@@ -13,7 +13,9 @@
     align-items:center;
     justify-content: center;
     flex-direction: column;
-    background-color:  #643c75;
+ 
+    background-image: linear-gradient(to right,rgb(169, 163, 163), #7d369b);
+
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     padding: 20px;

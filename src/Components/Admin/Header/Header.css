@@ -1,15 +1,25 @@
 .logout{
     background-color:hsl(282, 32%, 35%) ;
     color: #ffffff;
-    margin-left:400px;
+    margin-left:491px;
     margin-top: 23px;
 }
 .adnavbar{
     display: flex;
 }
-.list{
-    padding: 12px 229px;
+.list-a{
+    padding: 12px 55px;
+    margin-left: 515px;
 }
+.list-b{
+    padding: 12px 55px;
+  
+}
+.list-c{
+    padding: 12px 55px;
+   
+}
+
 .logoa{
     margin-left:685px;
     width: 10%;
@@ -17,3 +27,45 @@
 .adlogo{
     display: flex;
 }
+.log-ad{
+    background-color:hsl(282, 32%, 35%) ;
+    color: #ffffff;
+    margin-left:380px;
+    margin-top: 23px;
+}
+.list-a a{
+    text-decoration: none;
+    color: inherit;
+}
+.list-b a{
+    text-decoration: none;
+    color: inherit;
+}
+.list-c a{
+    text-decoration: none;
+    color: inherit;
+}
+.list-a:hover{
+
+outline-style: solid;
+outline-width: 2px;
+outline-color:  hsl(282, 32%, 35%);
+background-color:hsl(282, 32%, 35%) ;
+color: white;
+}
+.list-b:hover{
+    outline-style: solid;
+outline-width: 2px;
+outline-color:  hsl(282, 32%, 35%);
+background-color:hsl(282, 32%, 35%) ;
+color: white;
+  
+    }
+.list-c:hover{
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color:  hsl(282, 32%, 35%);
+    background-color:hsl(282, 32%, 35%) ;
+color: white;
+        
+        }

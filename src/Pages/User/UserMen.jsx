@@ -7,4 +7,4 @@ function UserMen() {
   )
 }
 
-export default UserMen
+export default UserMen;
