@@ -61,6 +61,7 @@ function SignUp() {
             onBlur={formik.handleBlur}
             value={formik.values.email}
             className='email'
+            size={30}
             placeholder='Email'
           />
           {formik.touched.email && formik.errors.email && <div className="error">{formik.errors.email}</div>}
@@ -75,6 +76,7 @@ function SignUp() {
             onBlur={formik.handleBlur}
             value={formik.values.username}
             className='use'
+            size={30}
             placeholder='Username'
           />
           {formik.touched.username && formik.errors.username && <div className="error">{formik.errors.username}</div>}
@@ -89,6 +91,7 @@ function SignUp() {
             onBlur={formik.handleBlur}
             value={formik.values.password}
             className='pass'
+            size={30}
             placeholder='Password'
           />
           {formik.touched.password && formik.errors.password && <div className="error">{formik.errors.password}</div>}
@@ -103,7 +106,7 @@ function SignUp() {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.confirmPassword}
-            
+            size={30}
             placeholder='Confirm Password'
           />
           {formik.touched.confirmPassword && formik.errors.confirmPassword && <div className="error">{formik.errors.confirmPassword}</div>}

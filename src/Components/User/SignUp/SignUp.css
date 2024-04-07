@@ -22,6 +22,7 @@
    
     
 }
+
 .create{
     text-align: center;
     color:rgb(236, 171, 8);
@@ -40,23 +41,27 @@ color: white;
 }
 
 .inpu-conf{
-    padding-left: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 8px;
     padding-bottom: 8px;
 }
 .pass{
-    padding-left: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 8px;
     padding-bottom: 8px;
 
 }
 .email{
-    padding-left: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
    border-radius: 8px;
     padding-bottom: 8px;
 }
 .use{
-    padding-left: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 8px;
     padding-bottom: 8px;
 }
