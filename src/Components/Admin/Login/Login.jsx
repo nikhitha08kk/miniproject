@@ -1,62 +1,81 @@
-import React from 'react'
-import './Login.css'
+import React from 'react';
+import './Login.css';
+import * as Yup from 'yup';
 import { ErrorMessage, Form, Field, Formik } from 'formik';
-const initialValues = {
-  email: "",
-  password: "",
-};
-const validateForm = (values) => {
-  const errors = {};
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { login } from '../../../Services/Adminapi';
 
-  if (!values.email) {
-    errors.email = 'Email is Required';
-  } else if (!/^\S+@\S+\.\S+$/.test(values.email)) {
-    errors.email = 'Invalid email address';
-  }
+const validationSchema = Yup.object().shape({
+  email: Yup.string()
+    .email('Invalid email')
+    .required('Email is required')
+    .matches(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, 'Invalid email format'),
+  password: Yup.string()
+    .required('Password is required')
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+      'Password must contain at least 8 characters, including one uppercase, one lowercase, one number, and one special character.'
+    ),
+});
 
-  if (!values.password) {
-    errors.password = 'Password is required';
-  } else if (values.password.length < 8) {
-    errors.password = 'Password must be at least 8 characters long';
-  }
+const Login = () => {
+  const navigate = useNavigate();
 
-  return errors;
-};
-
-function Login() {
-  const handleSubmit = (values, { setSubmitting }) => {
-    console.log(values);
-    setSubmitting(false);
+  const handleSubmit = async (values, { setErrors, setSubmitting }) => {
+    try {
+      const { data } = await login(values);
+      if (data.created) {
+        console.log("data")
+        localStorage.setItem('jwt', data.token);
+        toast.success(data.message, { position: 'top-right' });
+        navigate('/');
+      } else {
+        toast.error(data.message, { position: 'top-right' });
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      setErrors({ submit: error.response.data.message || 'Something went wrong' });
+    } finally {
+      setSubmitting(false);
+    }
   };
+
   return (
     <div className='log-admi'>
-       <Formik
-        initialValues={initialValues}
-        validate={validateForm}
+      <Formik
+        initialValues={{
+          email: '',
+          password: '',
+        }}
+        validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({isSubmitting}) => (
-         <Form className='log-adm'>
+        {({ isSubmitting }) => (
+          <Form className='log-adm'>
             <h1 className='logi-adm'>LOGIN</h1>
             <p>
-          <label htmlFor='email' >
-          <Field type="email" className='use-adm' placeholder='Email' name="email" />
-              <ErrorMessage name='email' component="div" />
-          </label>
-         </p>
-         <p>
-          <label  htmlFor='password'>
-          <Field type="password" className='pass-adm' placeholder='Password' name="password" />
-          <ErrorMessage name='password' component="div" />
-          </label>
-         </p>
-         <p>
-         <button className='but-l-adm'  type='submit' disabled={isSubmitting}>LOGIN</button>
-         </p>
-        </Form>
+              <label htmlFor='email'>
+                <Field type='email' name='email' className='use-adm' placeholder='Email'size={30} />
+                <ErrorMessage name='email' component='div' />
+              </label>
+            </p>
+            <p>
+              <label htmlFor='password'>
+                <Field type='password' name='password' className='pass-adm' placeholder='Password'size={30} />
+                <ErrorMessage name='password' component='div' />
+              </label>
+            </p>
+            <p>
+              <button className='but-l-adm' type='submit' disabled={isSubmitting}>
+                LOGIN
+              </button>
+            </p>
+          </Form>
         )}
-        </Formik>
+      </Formik>
     </div>
   );
-}
-export default Login
+};
+
+export default Login;
