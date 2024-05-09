@@ -2,41 +2,32 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from  'yup'
 import './SignUp.css';
+import { useNavigate } from "react-router-dom";
 import { signup } from '../../../Services/Userapi';
 
-// const validate = values => {
-//   const errors = {};
-//   if (!values.username.trim()){
-//     errors.username = 'Username is required';
-//   }
-//   if (!values.email.trim()){
-//     errors.email = 'Email is required';
-//   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)){
-//     errors.email = 'Please enter a valid email address';
-//   }
-//   if (!values.password){
-//     errors.password = 'Password is required';
-//   } else if (values.password.length < 8){
-//     errors.password = 'Password must be at least 8 characters long';
-//   }
-//   if (!values.confirmPassword){
-//     errors.confirmPassword = 'Confirm Password is required';
-//   } else if (values.confirmPassword !== values.password){
-//     errors.confirmPassword = 'Passwords do not match';
-//   }
-//   return errors;
-// }
 const validationSchema = Yup.object().shape({
+ 
+  email: Yup.string()
+  .email('Invalid email')
+  .required('Email is required')
+  .matches(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, 'Invalid email format'),
   username: Yup.string().required('Username is required'),
-  email: Yup.string().email('Invalid email address').required('Email is required'),
-  password: Yup.string().min(8, 'Password must be at least 8 characters long').required('Password is required'),
-  confirmPassword: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match').required('Confirm Password is required'),
+  password: Yup.string()
+  .required('Password is required')
+  .matches(
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+    'Password must contain at least 8 characters, including one uppercase, one lowercase, one number, and one special character.'
+  ),
+  confirmPassword: Yup.string()
+  .oneOf([Yup.ref('password'), null], 'Passwords must match')
+  .required('Confirm Password is required'),
 });
 function SignUp() {
+  const navigate = useNavigate();
   const formik = useFormik({
    initialValues :{
-      username: '',
       email: '',
+      username: '',
       password: '',
       confirmPassword: '',
   },
@@ -44,6 +35,8 @@ function SignUp() {
     onSubmit: async values => {
       const {data} = await signup(values)
      console.log(data);
+     navigate("/login");
+
     },
   });
 
@@ -52,9 +45,9 @@ function SignUp() {
       <form onSubmit={formik.handleSubmit} className='for'>
          <h1 className='create'>CREATE AN ACCOUNT</h1>
          <p>
-          <label htmlFor='email' ></label>
+   
           <input
-            type='text'
+            type='email'
             id='email'
             name='email'
             onChange={formik.handleChange}
@@ -67,7 +60,7 @@ function SignUp() {
           {formik.touched.email && formik.errors.email && <div className="error">{formik.errors.email}</div>}
          </p>
          <p>
-          <label htmlFor='username'></label>
+        
           <input
             type='text'
             id='username'
@@ -82,7 +75,7 @@ function SignUp() {
           {formik.touched.username && formik.errors.username && <div className="error">{formik.errors.username}</div>}
          </p>
          <p>
-          <label htmlFor='password' ></label>
+          
           <input
             type='password'
             id='password'
@@ -97,7 +90,7 @@ function SignUp() {
           {formik.touched.password && formik.errors.password && <div className="error">{formik.errors.password}</div>}
          </p>
          <p>
-          <label htmlFor='confirmPassword' ></label>
+         
           <input
           className='inpu-conf'
             type='password'

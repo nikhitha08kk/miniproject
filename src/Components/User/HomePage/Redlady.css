@@ -1,21 +1,22 @@
  
   .red-lady{
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 12px;
 
   }
   .right{
     position: absolute;
     bottom:281px;
-    left: 60px;
+    left: 10px;
     font-size: x-large;
     color: white;
     font-family: cursive;
+    margin: 0%;
  }
  .be{
     position: absolute;
     bottom:81px;
-    left: 80px;
+    left: 15px;
     font-size:300%;
     color: white;
     font-family: cursive;
@@ -23,7 +24,7 @@
  .fid{
     position: absolute;
     bottom:10px;
-    left: 80px;
+    left: 15px;
     font-size:300%;
     color: white;
     font-family: cursive; 

@@ -6,40 +6,38 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { login } from '../../../Services/Adminapi';
 
-const validationSchema = Yup.object().shape({
-  email: Yup.string()
-    .email('Invalid email')
-    .required('Email is required')
-    .matches(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, 'Invalid email format'),
-  password: Yup.string()
-    .required('Password is required')
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
-      'Password must contain at least 8 characters, including one uppercase, one lowercase, one number, and one special character.'
-    ),
-});
+
 
 const Login = () => {
   const navigate = useNavigate();
+  
+  const validationSchema = Yup.object().shape({
+    email: Yup.string()
+      .email("Invalid email address")
+      .required("Email is required"),
+    password: Yup.string().required("Password is required"),
+  });
 
-  const handleSubmit = async (values, { setErrors, setSubmitting }) => {
+  const handleSubmit = async (values) => {
     try {
       const { data } = await login(values);
+      console.log(data,"admin return data !!!")
       if (data.created) {
-        console.log("data")
         localStorage.setItem('jwt', data.token);
+        // Use toast.success for successful login
         toast.success(data.message, { position: 'top-right' });
-        navigate('/');
+        navigate("/admin");
       } else {
         toast.error(data.message, { position: 'top-right' });
       }
     } catch (error) {
       console.error('Error during login:', error);
-      setErrors({ submit: error.response.data.message || 'Something went wrong' });
-    } finally {
-      setSubmitting(false);
-    }
+   
+    } 
+    
+  // const handleClick = () => navigate("/signup");
   };
+  
 
   return (
     <div className='log-admi'>
@@ -51,23 +49,32 @@ const Login = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting }) => (
+        {({handleChange}) => (
           <Form className='log-adm'>
             <h1 className='logi-adm'>LOGIN</h1>
             <p>
               <label htmlFor='email'>
-                <Field type='email' name='email' className='use-adm' placeholder='Email'size={30} />
+                <Field type='email'
+                 name='email' 
+                 className='use-adm' 
+                 placeholder='Email'size={30}
+                 onChange={handleChange} />
                 <ErrorMessage name='email' component='div' />
               </label>
             </p>
             <p>
               <label htmlFor='password'>
-                <Field type='password' name='password' className='pass-adm' placeholder='Password'size={30} />
+                <Field type='password' 
+                name='password' 
+                className='pass-adm' 
+                placeholder='Password'
+                size={30} 
+                onChange={handleChange}/>
                 <ErrorMessage name='password' component='div' />
               </label>
             </p>
             <p>
-              <button className='but-l-adm' type='submit' disabled={isSubmitting}>
+              <button className='but-l-adm' type='submit' >
                 LOGIN
               </button>
             </p>

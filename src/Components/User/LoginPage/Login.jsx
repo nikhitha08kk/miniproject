@@ -1,40 +1,40 @@
 import React from 'react';
 import './Login.css';
-import { ErrorMessage, Form, Formik } from 'formik';
+import {ErrorMessage,  Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { useNavigate, Link } from 'react-router-dom'; // Import Link
+import { useNavigate, Link } from 'react-router-dom';
 import { login } from "../../../Services/Userapi";
 import { toast } from 'react-toastify';
 
 const validationSchema = Yup.object().shape({
   email: Yup.string()
     .email('Invalid email')
-    .required('Email is required')
-    .matches(/^[a-zA-Z0-9._%+-]+@gmail\.com$/, 'Invalid email format'),
+    .required('Email is required'),
+   
   password: Yup.string()
-    .required('Password is required')
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
-      'Password must contain at least 8 characters, including one uppercase, one lowercase, one number, and one special character.'
-    ),
+    .required('Password is required'),
+     
+    
 });
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const handleSubmit = async (values, { setErrors }) => {
+  const handleSubmit = async (values) => {
     try {
+      console.log("on submit !!!!")
       const { data } = await login(values);
+      console.log(data,"user return data !!!")
       if (data.created) {
         localStorage.setItem("jwt", data.token);
-        toast.success(data.message, { position: "top-right" });
+        toast.success("login sucess", { position: "top-right",} );
         navigate('/');
       } else {
         toast.error(data.message, { position: "top-right" });
       }
     } catch (error) {
       console.error('Error during login:', error);
-      setErrors({ submit: error.response.data.message || 'Something went wrong' });
+   
     }
   };
 
@@ -48,23 +48,37 @@ const Login = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        {({ isSubmitting, handleChange }) => ( // Add handleChange
+        {({ handleChange }) => (
           <Form className='log'>
             <h1 className='logi'>LOGIN</h1>
             <p>
-              <label htmlFor='email'></label>
-              <input type="email" name="email" className='mail' placeholder='Email' size={30} onChange={handleChange} />
-              <ErrorMessage name='email' component="div" />
+              <label htmlFor='email'>Email:</label>
+              <input type="email"
+               name="email" 
+               className='mail' 
+               placeholder='Email' 
+               size={30} 
+               onChange={handleChange} 
+               
+               />
+              { <ErrorMessage name='email' component="div" /> }
+             
             </p>
             <p>
-              <label htmlFor='password'></label>
-              <input type="password" className='pass' placeholder='Password' size={30} name="password" onChange={handleChange} />
-              <ErrorMessage name='password' component="div" />
+              <label htmlFor='password'>Password:</label>
+              <input type="password"
+               className='pass'
+                placeholder='Password'
+                 size={30}
+                  name="password"
+                   onChange={handleChange} 
+               />
+              { <ErrorMessage name='password' component="div" /> }
             </p>
             <p>
-              <button className='but-l' type='submit'>LOGIN</button> {/* Removed onClick */}
+              <button className='but-l' type='submit'>LOGIN</button>
             </p>
-            <p className='dont'>Don't have an account? <Link to='/SignUp'>Signup</Link></p> {/* Replaced anchor tag with Link */}
+            <p className='dont'>Don't have an account? <Link to='/SignUp'>Signup</Link></p>
           </Form>
         )}
       </Formik>
