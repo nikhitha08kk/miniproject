@@ -8,6 +8,7 @@ import AdminLogin from '../Pages/Admin/AdminLogin'
 import AdminOrder from '../Pages/Admin/AdminOrder'
 import UsersList from '../Pages/Admin/UsersList'
 import AddProduct from '../Components/Admin/AddProduct/AddProduct'
+import AdminEditPage from '../Pages/Admin/AdminEditPage'
 
 
 function Adminrouter() {
@@ -20,6 +21,7 @@ function Adminrouter() {
         <Route path='/order' element={<AdminOrder/>}/>
         <Route path='/product' element={<AdminProduct/>}/>
         <Route path='/login' element={<AdminLogin/>}/>
+        <Route path='/edit/:id' element={<AdminEditPage/>}/>
       </Routes>
     </div>
   )

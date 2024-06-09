@@ -1,57 +1,215 @@
-/* .pro-butt{
-background-color: rgb(255, 27, 27) ;
-}
-.admin-pro{
-    width:10%;
-}
-.pro-table{
-    margin-bottom: 12px;
-} */
-/* Productdata.css */
 
-.admin-products {
-    margin: 20px;
-}
-
-.admin-products h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.admin-products h3 {
-    font-size: 18px;
+/* .adminProducts {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .adminProducts h1 {
+    text-align: center;
     margin-bottom: 20px;
-}
-
-.pro-table {
+  }
+  
+  .adminProducts h3 {
+    margin: 10px 0;
+  }
+  
+  .proTable {
     width: 100%;
     border-collapse: collapse;
-}
-
-.pro-table th, .pro-table td {
+    margin-top: 20px;
+  }
+  
+  .proTable th,
+  .proTable td {
+    border: 1px solid #ddd;
     padding: 8px;
-    border: 1px solid #ccc;
     text-align: left;
-}
-
-.pro-table th {
+  }
+  
+  .proTable th {
     background-color: #f2f2f2;
-}
-
-.pro-table td img {
-    max-width: 100px;
-}
-
-.admin-pro-table-btn {
+    color: #333;
+  }
+  
+  .proTable img {
+    height: 200px;
+    max-width: 160px;
+    object-fit: cover;
+  }
+  
+  .adminProTableBtnRed,
+  .adminProTableBtnGreen {
     padding: 8px 12px;
-    margin-right: 5px;
-    background-color: #007bff;
-    color: #fff;
+    margin: 0 5px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
+    color: white;
     cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .adminProTableBtnRed {
+    background-color: #f44336;
+  }
+  
+  .adminProTableBtnGreen {
+    background-color: #4caf50;
+  }
+  
+  .adminProTableBtnRed:hover {
+    background-color: #d32f2f;
+  }
+  
+  .adminProTableBtnGreen:hover {
+    background-color: #388e3c;
+  }
+   */
+   /* Productdata.css */
+
+.admin-product {
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.admin-pro-table-btn:hover {
-    background-color: #0056b3;
+.admin-product__title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.product-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.product-list-table thead {
+  background-color: #f4f4f4;
+}
+
+.product-list-table th,
+.product-list-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.product-list-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-list-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-list-row:hover {
+  background-color: #f1f1f1;
+}
+
+.productlist-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+.admin-product {
+  padding: 40px; /* Increased padding for overall container */
+  font-family: Arial, sans-serif;
+}
+
+.admin-product__title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px; /* Increased margin-bottom for spacing */
+}
+
+.product-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 20px; /* Added padding around the table */
+}
+
+.product-list-table thead {
+  background-color: #f4f4f4;
+}
+
+.product-list-table th,
+.product-list-table td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increased padding for table cells */
+  text-align: left;
+}
+
+.product-list-table th {
+  padding-top: 15px; /* Increased padding-top */
+  padding-bottom: 15px; /* Increased padding-bottom */
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-list-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-list-row:hover {
+  background-color: #f1f1f1;
+}
+
+/* .product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+} */
+
+.btn {
+  cursor: pointer;
+  margin-right: 10px;
+  border: none;
+  padding: 10px 20px; /* Increased padding for buttons */
+  font-size: 1em;
+  border-radius: 4px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn--edit {
+  background-color: #4CAF50;
+}
+
+.btn--delete {
+  background-color: #f44336;
+}
+
+.btn--disable {
+  background-color: #ff9800;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 50px;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 50px;
+  padding: 20px; /* Added padding for better spacing */
 }

@@ -10,7 +10,9 @@ function Header() {
         <div className='adnavbar'>
             <div className='list-a'>< a href='/Admin/user' >UserList</a></div>
             <div className='list-b'><a href='/Admin/product'>Product</a></div>
+            <div className='list-c'>< a href='/Admin/add'>Add Product</a></div>
             <div className='list-c'>< a href='/Admin/order'>order</a></div>
+
         </div>
   </div>
   )

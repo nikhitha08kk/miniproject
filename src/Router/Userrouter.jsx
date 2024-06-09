@@ -11,6 +11,7 @@ import UserMen from '../Pages/User/UserMen'
 import UserWomen from '../Pages/User/UserWomen'
 import UserCart from '../Pages/User/UserCart'
 import UserWish from '../Pages/User/UserWish'
+import UserShop from '../Pages/User/UserShop'
 
 
 function Userrouter() {
@@ -28,7 +29,7 @@ function Userrouter() {
         <Route path='/Women'element={<UserWomen/>}/>
         <Route path='/Cart' element={<UserCart/>}/>
         <Route path='/Wish' element={<UserWish/>}/>
-     
+         <Route path='/shop' element={<UserShop/>}/>
         </Routes>
     </div>
   )

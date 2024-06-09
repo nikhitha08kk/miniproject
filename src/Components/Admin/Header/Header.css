@@ -6,6 +6,7 @@
 }
 .adnavbar{
     display: flex;
+    margin-left: -49px;
 }
 .list-a{
     padding: 12px 55px;
