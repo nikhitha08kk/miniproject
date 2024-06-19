@@ -1,8 +1,8 @@
 import React from 'react'
-import Wish from '../../Components/User/Wish/Wish'
+import WishlistPage from "../../Components/User/shop/WishlistPage"
 function UserWish() {
   return (
-    <div><Wish/></div>
+    <div><WishlistPage/></div>
   )
 }
 

@@ -20,7 +20,7 @@ function Header() {
           <a href='/SignUp'>signup</a>
           <a href='/Login'>login</a>
           </div></div></div>
-               <div className='heart'><a href='/Wish'><IoHeartOutline size={iconSize} /></a></div>
+               <div className='heart'><a href='/wishlist'><IoHeartOutline size={iconSize} /></a></div>
                <div className='cart'><a href='/Cart'><FaCartPlus size={iconSize} /></a></div>
       </div>
     

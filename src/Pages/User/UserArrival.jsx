@@ -1,5 +1,5 @@
 import React from 'react'
-import Newarrival from '../../Components/User/Newarrival/Newarrival'
+import Newarrival from '../../Components/User/shop/Newarrival'
 
 function UserArrival() {
   return (

@@ -18,7 +18,7 @@ userInstance.interceptors.request.use((request) => {
     return request;
   });
   adminInstance.interceptors.request.use((request) => {
-    const token = localStorage.getItem('adminJWT');
+    const token = localStorage.getItem('adminjwt');
     request.headers.authorization = `Bearer ${token}`;
     return request;
   });

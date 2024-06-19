@@ -52,11 +52,11 @@ function Productdata() {
     }
   };
 
-  const handleDisable = (productId) => {
-    // Logic to disable the product
-    console.log('Disable product with ID:', productId);
-    toast.info('Product disabled');
-  };
+  // const handleDisable = (productId) => {
+  //   // Logic to disable the product
+  //   console.log('Disable product with ID:', productId);
+  //   toast.info('Product disabled');
+  // };
 
   if (loading) return <div className="loading">Loading...</div>;
   if (error) return <div className="error">Error: {error}</div>;
@@ -89,7 +89,7 @@ function Productdata() {
               <td>
                 <button className='btn btn--edit' onClick={() => handleEdit(product._id)}>Edit</button>
                 <button className='btn btn--delete' onClick={() => handleDelete(product._id)}>Delete</button>
-                <button className='btn btn--disable' onClick={() => handleDisable(product._id)}>Disable</button>
+                {/* <button className='btn btn--disable' onClick={() => handleDisable(product._id)}>Disable</button> */}
               </td>
             </tr>
           ))}

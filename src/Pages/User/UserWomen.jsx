@@ -1,9 +1,9 @@
 import React from 'react'
-import Women from '../../Components/User/Women/Women'
+import Womens from '../../Components/User/shop/Womens'
 
 function UserWomen() {
   return (
-    <div><Women/></div>
+    <div><Womens/></div>
   )
 }
 

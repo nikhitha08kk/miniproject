@@ -8,29 +8,44 @@ export const login = (value) =>{
     return userInstance.post('/login',{...value})
     
 }
-// export const NewArrivals = () => {
-//     return userInstance.get("/newarrival");
-//   };
-
 
 export const shopProduct = async () => {
-    try {
-      const response = await userInstance.get('http://localhost:8000/shop'); 
-      return response.data.shopProduct; 
-    } catch (error) {
-      console.error('Error fetching shop products:', error.response || error.message || error);
-      throw error;
+  try {
+    const response = await userInstance.get('http://localhost:8000/shop');
+    if (response.data && response.data.shopProduct) {
+      return response.data.shopProduct;
+    } else {
+      throw new Error('Unexpected response structure');
     }
+  } catch (error) {
+    console.error('Error fetching shop products:', error.response ? error.response.data : error.message || error);
+    throw error;
+  }
+};
+
+  export const newArrival= () => {
+    return userInstance.get("/shop/Newarrival");
+  };
+  export const bestseller= () => {
+    return userInstance.get("/bestseller");
+  };
+  export const men= () => {
+    return userInstance.get("/men");
+  };
+  export const women= () => {
+    return userInstance.get("/women");
+  };
+  export const bodybath= () => {
+    return userInstance.get("/bodybath");
   };
 
-
-  export const newArrival= async () => {
-    try {
-      const response = await userInstance.get('http://localhost:8000/Newarrival'); 
-      console.log('Full API response data:', response.data);
-      return response.data.shopProduct; 
-    } catch (error) {
-      console.error('Error fetching shop products:', error.response || error.message || error);
-      throw error;
-    }
+  export const getProductDetails = (productId) => {
+    return userInstance.get(`/shop/${productId}`);
   };
+  
+  // export const getUser = () => {
+  //   return userInstance.get("/user");
+  // };
+  // export const createOrder = (orderData) => {
+  //   return userInstance.post("/createorder", { ...orderData });
+  // };

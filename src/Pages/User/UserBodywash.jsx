@@ -1,9 +1,9 @@
 import React from 'react'
-import Bodywash from '../../Components/User/Bodywash/Bodywash'
 
+import BodyBath from '../../Components/User/shop/BodyBath'
 function UserBodywash() {
   return (
-    <div><Bodywash/></div>
+    <div><BodyBath/></div>
   )
 }
 

@@ -32,3 +32,34 @@
  .red-bot{
    width: 100%;
  }
+ @media (max-width: 768px) {
+  .right {
+      position: static;
+      font-size: large;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .be {
+      position: static;
+      font-size: 200%;
+      text-align: center;
+      margin-top: 10px;
+  }
+
+  .fid {
+      position: static;
+      font-size: 200%;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+
+  .red-lady {
+      padding: 0 10px;
+  }
+
+  .red-bot {
+      width: 100%;
+  }
+}
