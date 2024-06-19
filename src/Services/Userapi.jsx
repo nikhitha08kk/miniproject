@@ -42,7 +42,12 @@ export const shopProduct = async () => {
   export const getProductDetails = (productId) => {
     return userInstance.get(`/shop/${productId}`);
   };
-  
+  export const AddToWishlist = (productId) => {
+    return userInstance.post("/wishlist", { productId });
+  };
+  export const checkProductInWishlist = (productId) => {
+    return userInstance.get(`/wishlist/check/${productId}`);
+  }
   // export const getUser = () => {
   //   return userInstance.get("/user");
   // };
